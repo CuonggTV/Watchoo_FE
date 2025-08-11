@@ -3,6 +3,25 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  --main-color: #c0392c;
+  --second-color: #3a3a3a;
+
+  --body-bg: #181616;
+  --box-bg: #221f1f;
+  --text-color: #fff;
+
+  --nav-height: 110px;
+  --space-top: 30px;
+
+  --ff-cairo: 'Cairo', sans-serif;
+  --ff-monoton: 'Monoton', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -11,17 +30,30 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+body {
+  font-family: 'cairo', sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  padding-top: var(--nav-height);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
